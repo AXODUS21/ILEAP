@@ -1,0 +1,89 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+body{
+  background-color: rgb(181, 181, 181);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.Title{
+  position: absolute;
+  font-size: 23vw;
+  z-index: -1;
+  color: rgb(169, 8, 8);
+  filter: drop-shadow(4px 2px 10px);
+  padding-left: 3vw;
+  text-shadow: 7.5px 0.5px rgb(127, 17, 17);
+}
+.log-in-container{
+  border: solid rgb(176, 176, 176);
+  box-shadow: 2px 1.5px 5px black;
+  padding: 40px 60px 60px 60px;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+}
+.log-in-container h1{
+  filter: drop-shadow(1px 1px 1.5px);
+}
+.email-log-in-container{
+  display: grid;
+  border-bottom: 2px rgb(153, 153, 153) solid;
+}
+.email-log-in-container input{
+  height: 5vh;
+  width: 25vw;
+  margin-top: 2vh;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+.email-log-in-container label{
+  margin-top: 2vh;
+  text-align: left;
+}
+.email-log-in-container button{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  padding: 10px;
+  cursor: pointer;
+  border:none;
+  background-color: transparent;
+  transition: 1.5s ease-in-out;
+  height: 7vh;
+}
+.email-log-in-container button:hover{
+  background-color: rgb(169, 8, 8);
+  border: #de1717 solid;
+}
+.log-in-with-google{
+  display: grid;
+  place-content: center;
+  margin-top: 5vh;
+}
+.log-in-with-google button{
+  border-radius: 100px;
+  border: 1.5px solid red ;
+  background-color: transparent;
+  padding: 14px 15px 9px 15px ;
+  cursor: pointer;
+  margin-bottom: 1.5vh;
+}
+svg{
+  fill: #de1717;
+}
+.log-in-btn,
+.sign-up-btn{
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+}

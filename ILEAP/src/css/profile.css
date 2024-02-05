@@ -1,0 +1,144 @@
+.profile-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13vh;
+    height: 78vh;
+}
+.user-img{
+    display: flex;
+    justify-content: center;
+}
+.user-img img{
+    height: 30vh;
+    border-radius: 100%;
+    border: solid black;
+}
+.user-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.table{
+    display: grid;  
+    border-collapse: collapse;
+}
+th,
+td {
+    width: 45vw;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+   
+} 
+.button-container{
+    background-color: white;
+    padding: 10px;
+}
+.btn {
+ position: relative;
+ font-size: 17px;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .2s;
+ border: none;
+ font-family: inherit;
+ font-weight: 500;
+ color: black;
+ background-color: white;
+ cursor: pointer;
+}
+
+.btn:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ transition: all .4s;
+}
+
+.a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid red;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.a::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+.a:hover::before {
+  transform: scaleY(0);
+}
+
+.a::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+.a:hover::after {
+  transform: scaleX(0);
+}
+
+.a span {
+  position: relative;
+  z-index: 3;
+}
+.sign-out-button-container{
+    display: flex;
+    justify-content: end;
+    background-color: white;
+    padding-right: 3.2vw;
+    padding-bottom: 2vw;
+    
+}
+.sign-out-button-container button {
+  background-color: black;
+  text-decoration: none;
+  background-color: #212121;
+  border: none;
+  cursor: pointer;
+}
+
+

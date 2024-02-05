@@ -1,0 +1,111 @@
+*{
+    margin:  0px;
+    padding: 0px;
+}
+/* HEADER */
+header{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.user-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user-profile{
+    padding: 10px 0px 10px 10px;
+}
+.user-profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.dropdown{
+    position: relative;
+    padding-left: 1.5rem;
+}
+.dropdown button{
+    border: none;
+    background-color: inherit;
+}
+.dropdown-menu{
+    position: absolute;
+    left: calc(100% - 3rem);
+    width: 14vw;
+    top: calc(100% + 1.5rem);
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-40px);
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+}
+.link img{
+    transform: rotate(0deg);
+    transition: transform 2s ease-in-out;
+}
+.dropdown > .link:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+.dropdown-menu:hover{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+.dropdown > .link:focus{
+    transform: rotate(180deg);
+}
+.dropdown-menu{
+    display: grid;
+    gap:4vh;
+    padding: 20px 0px 20px 15px;
+    cursor: pointer;
+}
+.dropdown-options:hover{
+    color: rgb(166, 166, 166);
+}
+.dropdown-options{
+    text-decoration: none;
+    color: black;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    padding-right: 1.5vw;
+}
+.logo-container img{
+    height: 50px;
+    width: 50px;
+    mix-blend-mode:lighten;
+}
+
+/* body */
+.home-main{
+    height: 90vh;
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    justify-content: center;
+    align-items: center;    
+    background-color: white;
+
+}
+.details-container{
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+.title{
+    font-size: 10vw;
+    color: rgb(169, 8, 8);
+    filter: drop-shadow(6px 4px 8px);
+    text-shadow: 7px 0.5px rgb(127, 17, 17);
+}
+.details-container p{
+    width: 30vw;
+}
+
